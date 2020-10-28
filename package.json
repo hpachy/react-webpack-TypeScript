@@ -1,0 +1,60 @@
+{
+  "name": "webpack-react",
+  "sideEffects": [
+    "*.css"
+  ],
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.js",
+    "start:prod": "webpack serve --config webpack.prod.js",
+    "start:dev": "webpack serve --hot",
+    "watch": "webpack --watch",
+    "serveEnv": "webpack serve --env stage='dev'",
+    "server": "node server.js",
+    "server:5000": "node dev-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:env:dev": "webpack --env stage=dev",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.0",
+    "css-minimizer-webpack-plugin": "^1.1.5",
+    "fork-ts-checker-webpack-plugin": "^1.6.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.2.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "ts-loader": "^8.0.7",
+    "typescript": "^3.9.7",
+    "webpack": "^5.3.0",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.8.1",
+    "webpack-merge": "^5.2.0"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "^16.10.2",
+    "@types/html-webpack-plugin": "^3.2.4",
+    "@types/lodash": "^4.14.162",
+    "@types/terser-webpack-plugin": "^5.0.0",
+    "core-js": "^3.2.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-hot-loader": "^4.12.13",
+    "regenerator-runtime": "^0.13.3"
+  },
+  "main": "server.js",
+  "description": ""
+}
